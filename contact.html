@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Alex Morgan — Full-Stack Developer & Designer</title>
+  <meta name="description" content="Get in touch with Alex Morgan for web development, design projects, or collaboration opportunities. Send a message through the accessible contact form.">
+  <meta name="keywords" content="contact Alex Morgan, hire developer, web development inquiry, freelance developer">
+  <meta property="og:title" content="Contact Alex Morgan">
+  <meta property="og:description" content="Get in touch for web development and design collaboration opportunities.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Alex Morgan">
+  <meta name="twitter:description" content="Send a message for development and design collaboration.">
+  <link rel="canonical" href="https://alexmorgan.dev/contact">
+  <meta name="theme-color" content="#0a0e27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Alex Morgan - Home">
+        <span class="logo-text">A<span class="logo-accent">M</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="contact-heading">
+      <div class="container">
+        <h1 id="contact-heading" class="page-title animate-on-scroll">Get In Touch</h1>
+        <p class="page-subtitle animate-on-scroll">Let's start a conversation about your next project</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-heading">
+      <div class="container contact-layout">
+        <!-- Contact Info Sidebar -->
+        <aside class="contact-info animate-on-scroll" aria-label="Contact information">
+          <h2 class="contact-info-heading">Let's Connect</h2>
+          <p class="contact-info-text">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          
+          <address class="contact-details">
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:hello@alexmorgan.dev">hello@alexmorgan.dev</a>
+            </div>
+            <div class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>San Francisco, CA</span>
+            </div>
+          </address>
+
+          <div class="contact-social">
+            <h3 class="contact-social-heading">Follow Me</h3>
+            <ul class="social-links" role="list">
+              <li><a href="https://github.com" aria-label="GitHub profile" class="social-link">GitHub</a></li>
+              <li><a href="https://linkedin.com" aria-label="LinkedIn profile" class="social-link">LinkedIn</a></li>
+              <li><a href="https://twitter.com" aria-label="Twitter profile" class="social-link">Twitter</a></li>
+            </ul>
+          </div>
+        </aside>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper animate-on-scroll">
+          <h2 id="form-heading" class="visually-hidden">Contact Form</h2>
+          
+          <!-- Form Status Messages -->
+          <div id="form-status" role="status" aria-live="polite" class="form-status"></div>
+
+          <form id="contact-form" class="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Full Name <span aria-hidden="true" class="required-indicator">*</span></label>
+              <input 
+                type="text" 
+                id="contact-name" 
+                name="name" 
+                class="form-input" 
+                required 
+                minlength="2"
+                autocomplete="name"
+                aria-required="true"
+                aria-describedby="name-error"
+                placeholder="Your full name"
+              >
+              <p id="name-error" class="error-message" role="alert" aria-live="assertive"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address <span aria-hidden="true" class="required-indicator">*</span></label>
+              <input 
+                type="email" 
+                id="contact-email" 
+                name="email" 
+                class="form-input" 
+                required 
+                autocomplete="email"
+                aria-required="true"
+                aria-describedby="email-error"
+                placeholder="your.email@example.com"
+              >
+              <p id="email-error" class="error-message" role="alert" aria-live="assertive"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject <span aria-hidden="true" class="required-indicator">*</span></label>
+              <select 
+                id="contact-subject" 
+                name="subject" 
+                class="form-input form-select" 
+                required
+                aria-required="true"
+                aria-describedby="subject-error"
+              >
+                <option value="" disabled selected>Select a subject</option>
+                <option value="project">Project Inquiry</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="freelance">Freelance Opportunity</option>
+                <option value="general">General Question</option>
+                <option value="other">Other</option>
+              </select>
+              <p id="subject-error" class="error-message" role="alert" aria-live="assertive"></p>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message <span aria-hidden="true" class="required-indicator">*</span></label>
+              <textarea 
+                id="contact-message" 
+                name="message" 
+                class="form-input form-textarea" 
+                required 
+                minlength="10"
+                rows="6"
+                aria-required="true"
+                aria-describedby="message-error message-hint"
+                placeholder="Tell me about your project or idea..."
+              ></textarea>
+              <p id="message-hint" class="form-hint">Minimum 10 characters</p>
+              <p id="message-error" class="error-message" role="alert" aria-live="assertive"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large btn-submit" id="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading visually-hidden" aria-hidden="true">
+                <svg class="spinner" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" opacity="0.25"></circle><path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path></svg>
+                Sending...
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-logo">A<span class="logo-accent">M</span></p>
+          <p class="footer-tagline">Crafting digital experiences with purpose and precision.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Navigation</h3>
+          <nav aria-label="Footer navigation">
+            <ul class="footer-links" role="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Connect</h3>
+          <ul class="social-links" role="list">
+            <li><a href="https://github.com" aria-label="GitHub profile" class="social-link">GitHub</a></li>
+            <li><a href="https://linkedin.com" aria-label="LinkedIn profile" class="social-link">LinkedIn</a></li>
+            <li><a href="https://twitter.com" aria-label="Twitter profile" class="social-link">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <time datetime="2026">2026</time> Alex Morgan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top" hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <div aria-live="polite" aria-atomic="true" class="visually-hidden" id="announcer"></div>
+  <script src="main.js"></script>
+</body>
+</html>

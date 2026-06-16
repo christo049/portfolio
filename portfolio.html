@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Alex Morgan — Full-Stack Developer & Designer</title>
+  <meta name="description" content="Explore Alex Morgan's portfolio of web development and design projects. From enterprise SaaS to creative applications, see the work that defines modern digital craftsmanship.">
+  <meta name="keywords" content="Alex Morgan, portfolio, projects, web development, design, React, Node.js, full-stack">
+  <meta property="og:title" content="Portfolio — Alex Morgan">
+  <meta property="og:description" content="Explore projects showcasing full-stack development and design expertise.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Portfolio — Alex Morgan">
+  <meta name="twitter:description" content="Full-stack development and design projects.">
+  <link rel="canonical" href="https://alexmorgan.dev/portfolio">
+  <meta name="theme-color" content="#0a0e27">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Alex Morgan - Home">
+        <span class="logo-text">A<span class="logo-accent">M</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <h1 id="portfolio-heading" class="page-title animate-on-scroll">My Portfolio</h1>
+        <p class="page-subtitle animate-on-scroll">A curated collection of projects I'm proud of</p>
+      </div>
+    </section>
+
+    <!-- Portfolio Filter (optional, accessible) -->
+    <section class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading" class="visually-hidden">Projects</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar animate-on-scroll" role="toolbar" aria-label="Filter projects by category">
+          <button class="filter-btn active" aria-pressed="true" data-filter="all">All</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="web">Web Apps</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="design">Design</button>
+          <button class="filter-btn" aria-pressed="false" data-filter="mobile">Mobile</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="portfolio-grid" role="region" aria-live="polite" aria-label="Project gallery">
+          <article class="card project-card animate-on-scroll" data-category="web">
+            <div class="project-image" style="background: linear-gradient(135deg, #7c3aed 0%, #06b6d4 100%); height: 220px; border-radius: 12px 12px 0 0;" role="img" aria-label="EcoTrack dashboard showing sustainability metrics"></div>
+            <div class="card-body">
+              <h3 class="card-title">EcoTrack</h3>
+              <p class="card-text">A comprehensive sustainability dashboard for enterprises to monitor, analyze, and reduce their environmental impact with real-time data visualization.</p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">D3.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small" aria-label="View EcoTrack case study">Case Study <span aria-hidden="true">→</span></a>
+                <a href="#" class="btn btn-small btn-outline" aria-label="View EcoTrack source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card animate-on-scroll" data-category="mobile">
+            <div class="project-image" style="background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%); height: 220px; border-radius: 12px 12px 0 0;" role="img" aria-label="MindFlow meditation app interface"></div>
+            <div class="card-body">
+              <h3 class="card-title">MindFlow</h3>
+              <p class="card-text">A mindfulness and meditation app offering personalized sessions, progress tracking, guided breathing exercises, and a supportive community.</p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">PWA</span>
+                <span class="tag">Web Audio</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small" aria-label="View MindFlow case study">Case Study <span aria-hidden="true">→</span></a>
+                <a href="#" class="btn btn-small btn-outline" aria-label="View MindFlow live demo">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card animate-on-scroll" data-category="design">
+            <div class="project-image" style="background: linear-gradient(135deg, #06b6d4 0%, #10b981 100%); height: 220px; border-radius: 12px 12px 0 0;" role="img" aria-label="Artisan design system component library"></div>
+            <div class="card-body">
+              <h3 class="card-title">Artisan Design System</h3>
+              <p class="card-text">A comprehensive, accessible design system and component library built for consistency and efficiency across large-scale enterprise applications.</p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">Figma</span>
+                <span class="tag">Storybook</span>
+                <span class="tag">React</span>
+                <span class="tag">WCAG 2.1</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small" aria-label="View Artisan Design System case study">Case Study <span aria-hidden="true">→</span></a>
+                <a href="#" class="btn btn-small btn-outline" aria-label="View Artisan Design System documentation">Docs</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card animate-on-scroll" data-category="web">
+            <div class="project-image" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%); height: 220px; border-radius: 12px 12px 0 0;" role="img" aria-label="CloudSync file management interface"></div>
+            <div class="card-body">
+              <h3 class="card-title">CloudSync</h3>
+              <p class="card-text">A secure, real-time file synchronization platform with end-to-end encryption, team collaboration features, and intelligent conflict resolution.</p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">Next.js</span>
+                <span class="tag">AWS</span>
+                <span class="tag">WebSocket</span>
+                <span class="tag">TypeScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small" aria-label="View CloudSync case study">Case Study <span aria-hidden="true">→</span></a>
+                <a href="#" class="btn btn-small btn-outline" aria-label="View CloudSync source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card animate-on-scroll" data-category="design">
+            <div class="project-image" style="background: linear-gradient(135deg, #14b8a6 0%, #3b82f6 100%); height: 220px; border-radius: 12px 12px 0 0;" role="img" aria-label="HealthPulse patient dashboard"></div>
+            <div class="card-body">
+              <h3 class="card-title">HealthPulse</h3>
+              <p class="card-text">A patient portal redesign focused on accessibility and ease of use, enabling patients to manage appointments, records, and communicate with providers.</p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">Figma</span>
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">HIPAA</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small" aria-label="View HealthPulse case study">Case Study <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card project-card animate-on-scroll" data-category="web">
+            <div class="project-image" style="background: linear-gradient(135deg, #f97316 0%, #eab308 100%); height: 220px; border-radius: 12px 12px 0 0;" role="img" aria-label="DevMetrics analytics dashboard"></div>
+            <div class="card-body">
+              <h3 class="card-title">DevMetrics</h3>
+              <p class="card-text">A developer productivity analytics tool that provides insights into code quality, team velocity, and deployment frequency with beautiful visualizations.</p>
+              <div class="project-tags" aria-label="Technologies used">
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-small" aria-label="View DevMetrics case study">Case Study <span aria-hidden="true">→</span></a>
+                <a href="#" class="btn btn-small btn-outline" aria-label="View DevMetrics source code on GitHub">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-cta-block" aria-labelledby="portfolio-cta-heading">
+      <div class="container">
+        <div class="cta-card animate-on-scroll">
+          <h2 id="portfolio-cta-heading">Have a Project in Mind?</h2>
+          <p>I'm always excited to work on new challenges. Let's discuss how I can help bring your vision to life.</p>
+          <a href="contact.html" class="btn btn-primary btn-large">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <p class="footer-logo">A<span class="logo-accent">M</span></p>
+          <p class="footer-tagline">Crafting digital experiences with purpose and precision.</p>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Navigation</h3>
+          <nav aria-label="Footer navigation">
+            <ul class="footer-links" role="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-heading">Connect</h3>
+          <ul class="social-links" role="list">
+            <li><a href="https://github.com" aria-label="GitHub profile" class="social-link">GitHub</a></li>
+            <li><a href="https://linkedin.com" aria-label="LinkedIn profile" class="social-link">LinkedIn</a></li>
+            <li><a href="https://twitter.com" aria-label="Twitter profile" class="social-link">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <time datetime="2026">2026</time> Alex Morgan. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top" hidden>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <div aria-live="polite" aria-atomic="true" class="visually-hidden" id="announcer"></div>
+  <script src="main.js"></script>
+</body>
+</html>
